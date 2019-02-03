@@ -42,7 +42,7 @@ class convert_csv_to_utf8
         }
     }
 	
-	private function convert_to_utf8($data, $encoding)
+	public static function convert_to_utf8($data, $encoding)
     {
         if (function_exists('iconv')) {
             $out = @iconv($encoding, 'utf-8', $data);
