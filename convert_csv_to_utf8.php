@@ -5,7 +5,7 @@
  */
 class convert_csv_to_utf8
 {
-    public function convert_csv_to_utf8($file_address,$saveto=false)
+    public function __construct($file_address,$saveto=false)
     {
         $auto_detect_line_endings = ini_get('auto_detect_line_endings');
         ini_set('auto_detect_line_endings', TRUE);
